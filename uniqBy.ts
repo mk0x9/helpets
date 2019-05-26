@@ -1,10 +1,10 @@
-import identity from './identity'
+import identity from './identity';
 
 function SameValueZero(x: unknown, y: unknown): boolean {
     return x === y || (x !== x && y !== y);
 }
 
-function uniqBy<T>(array: T[], iteratee: (arg: T) => unknown = identity): T[] {
+export default function uniqBy<T>(array: T[], iteratee: (arg: T) => unknown = identity): T[] {
     const iteratees = array.map(iteratee);
     const result = [];
 
