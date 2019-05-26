@@ -1,4 +1,4 @@
-import { NonFunction, NonArray } from '../../types';
+import { NonFunction, NonArray } from '../../../types';
 
 type func = (...args: any[]) => any;
 
@@ -10,3 +10,6 @@ type nf02 = NonFunction<func>;
 type na01 = NonArray<func>;
 // $ExpectType never
 type na02 = NonArray<any[]>;
+
+// $ExpectType never
+type na03 = NonArray<any[]>;

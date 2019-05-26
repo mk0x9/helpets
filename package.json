@@ -4,9 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "npm run dtslint",
         "jest": "jest",
-        "dtslint": "dtslint test"
+        "dtslint": "dtslint test/dtslint"
     },
     "author": "",
     "license": "ISC",

@@ -5,5 +5,6 @@ module.exports = {
         'ts-jest': {
             tsConfig: 'tsconfig.jest.json'
         }
-    }
+    },
+    testMatch: ['**/test/spec/*.[tj]s?(x)']
 };

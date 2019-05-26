@@ -1,10 +1,8 @@
 {
     "compilerOptions": {
+        "noEmit": true,
         "target": "es2015",
-        "module": "commonjs",
         "lib": ["es2015"],
-        "declaration": true,
-        "outDir": "./lib",
         "strict": true,
         "noImplicitAny": true,
         "strictNullChecks": true,
@@ -12,12 +10,9 @@
         "strictBindCallApply": true,
         "strictPropertyInitialization": true,
         "noImplicitThis": true,
-        "noUnusedLocals": false,
-        "noUnusedParameters": false,
+        "alwaysStrict": true,
         "noImplicitReturns": true,
         "noFallthroughCasesInSwitch": true,
-        "moduleResolution": "node",
         "types": []
-    },
-    "include": ["./*.ts"]
+    }
 }

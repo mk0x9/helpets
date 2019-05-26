@@ -1,4 +1,4 @@
-import assign from '../../assign';
+import assign from '../../../assign';
 
 type Eq<A, B, True, False> = [A] extends [B] ? ([B] extends [A] ? True : False) : False;
 type Test<A, B> = Eq<A, B, true, never>;
